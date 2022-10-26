@@ -23,7 +23,7 @@ def run_query(query):
         return cur.fetchall()
  
  
-# rows = run_query("SHOW TABLES;")
+#rows = run_query("SHOW TABLES;")
 conn = init_connection()
  
 query = "CREATE OR REPLACE DATABASE EMPLOYEES;"
