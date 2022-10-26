@@ -15,6 +15,7 @@ def init_connection():
     )
     return con
  
+ 
 # Perform query, using st.experimental_memo to only rerun when the query changes or after 10 min.
 @st.experimental_memo(ttl=600)
 def run_query(query):
@@ -32,4 +33,3 @@ rows = run_query(query)
 # Print results.
 for row in rows:
     st.write(row)
-
